@@ -122,10 +122,10 @@ public class TechJobs {
             System.out.println("No Results");
         } else {
             for(HashMap<String, String> job : someJobs){
-                String divider = "*****\n";
-                System.out.println(divider);
+                String divider = "*****";
+                System.out.println("\n" + divider);
                 for(Map.Entry<String, String> jobValue: job.entrySet()){
-                    System.out.println(jobValue.getKey() +":" + jobValue.getValue());
+                    System.out.println(jobValue.getKey() +": " + jobValue.getValue());
                 }
                 System.out.println(divider);
             }
